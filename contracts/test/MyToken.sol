@@ -1,10 +1,5 @@
 // SPDX-License-Identifier: MIT
 
-/**
- * @summary: Compound Integration
- * @author: Himanshu Goyal
- */
-
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -21,7 +16,7 @@ contract MyToken is ERC20, Ownable, MyTokenStorage {
     _;
   }
 
- constructor(string memory _name, string memory _symbol, uint8  _decimals) public  ERC20(_name, _symbol) {
+ constructor(string memory _name, string memory _symbol, uint8  _decimals) ERC20(_name, _symbol) {
      decimalNo = _decimals;
   }
   
