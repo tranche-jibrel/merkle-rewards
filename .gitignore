@@ -8,3 +8,5 @@ Flatters.bat
 package-lock.json
 yarn.lock
 *.txt
+coverage/
+coverage.*
