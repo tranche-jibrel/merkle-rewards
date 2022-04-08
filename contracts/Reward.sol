@@ -52,7 +52,7 @@ contract Reward is RewardStorage, Ownable {
         disburse(_liquidityProvider, _claimedBalance, _week);
     }
 
-    function claimWeeks(address _liquidityProvider, Claim[] memory claims) public {
+    function claimWeeks(address _liquidityProvider, Claim[] memory claims) external {
         Claim memory claim ;
         for(uint i = 0; i < claims.length; i++) {
             claim = claims[i];
